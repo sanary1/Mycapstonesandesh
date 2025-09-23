@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+   
+
+    <title>Fortune Teller</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- this is the start of content -->
+     <!-- below line is the image-->
+    <img src="fortune teller.jpg" width="200" height="300" alt="fortune teller">
+    <h1>
+      Fortune Teller
+    </h1>
+    <form action="fortune.html" method=""get"></form>
+    <p> Ask the fortune teller a yes or no question</p>
+    <!-- below is the form-->
+    <form name="fortuneTeller" id="fortuneTeller" action="fortune.html">
+      <label for="namefield">Name:</label>
+      <input type="text" id="namefield" name="name" placeholder="your name" required>
+      <br>
+      <label for="emailfield">Email:</label>
+      <input type="email" id="emailfield" name="email" placeholder="your email" required>
+      <br>
+      <label for="birthdayfield">Birthday:</label>
+      <input type="date" id="birthdayfield" name="birthday" required>
+      <br>
+      <label for="randomcolorfield"></label>Random Color:</label>
+      <select id="color" name="color" required>
+        <option value="" disabled selected>Select your option</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select> <br>
+      <label for="comments">Tell us something about yourself:</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="50"
+        placeholder="I like to play soccer..."></textarea><br>
+      <label for="questionfield">Question:</label>
+      <input type="text" id="questionfield" name="question" placeholder="a yes or no question">
+      <br>
+      <input type="submit">
+    </form>
+    <p id="fortune"></p>
+    <script src="script.js"></script>
+    <!--script will specify the url. once script is hit, src will use url provided to locate file-->
+    <div id="fortune"></div>
+  </body>
+</html>
